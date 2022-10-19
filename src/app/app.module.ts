@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AddfasionComponent } from './addfasion/addfasion.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddfasionComponent
   ],
   imports: [
     BrowserModule,
