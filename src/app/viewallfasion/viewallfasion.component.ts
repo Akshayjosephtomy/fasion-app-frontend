@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-viewallfasion',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewallfasionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) { 
+    this.fetchData()
+  }
+  fetchData=()=>{
+    this.myapi.viewData().subscribe(
+      (data)=>{
+        this.fasionData=data
+      }
+    )
+  }
+
+
+  fasionData:any=[]
 
   ngOnInit(): void {
   }
 
 }
+
+

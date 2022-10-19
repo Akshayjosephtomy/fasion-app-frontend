@@ -7,6 +7,8 @@ import { AddfasionComponent } from './addfasion/addfasion.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewallfasionComponent } from './viewallfasion/viewallfasion.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const link:Routes=[
   {
@@ -26,7 +28,9 @@ const link:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(link)
+    RouterModule.forRoot(link),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
