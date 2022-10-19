@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"><br>
+            <h4>Add fasion</h4>
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label class="form-label">Item Name</label>
+                    <input type="text" placeholder="item name" class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label class="form-label">Category</label>
+                    <select name="category" [(ngModel)]="category" id="" class="form-control">
+                        <option value="mens">Men's</option>
+                        <option value="womens">Womens's</option>
+                        <option value="kids">Kid's</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label class="form-label">Brand</label>
+                    <input type="text" placeholder="Brand" class="form-control" name="brand" [(ngModel)]="brand">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label class="form-label">Price</label>
+                    <input type="text" placeholder="Price" class="form-control" name="price" [(ngModel)]="price">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label class="form-label">Stock</label>
+                    <input type="number" placeholder="stock" class="form-control" name="stock" [(ngModel)]="stock">
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readvalue()" [disabled]="status">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
